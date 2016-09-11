@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/punk.min.css">
+        <title>corporate punk</title>
+    </head>
+    <body class="hack dark">
+        <div class="container">
+            <h1>corporate punk</h1>
+            <h2>self-hosted image placeholder/server</h2>
+            <p>Throw a bunch of images inside a folder and run the server</p>
+            <h3>usage</h3>            
+            <table class="hack">
+                <tr>
+                    <th>parameter</th>
+                    <th>description</th>
+                    <th>example</th>
+                </tr>
+                <tr>
+                    <td><code>resize</code></td>
+                    <td>Resizes the final image by given width and height: <code>?resize=200x250</code></td>
+                    <td><a href="/hold?resize=400x400">?resize=400x400</a></td>
+                </tr>
+                <tr>
+                    <td><code>crop</code></td>
+                    <td>Crops the final image by given width and height: <code>?crop=200x250</code></td>
+                    <td><a href="/hold?resize=600x600&crop=400x400">?crop=200x250</a></td>
+                </tr>
+                <tr>
+                    <td><code>quality</code></td>
+                    <td>Sets the image quality: <code>[1-100]</code></td>
+                    <td><a href="/hold?resize=600x600&quality=25">?quality=25</a></td>
+                </tr>
+                <tr>
+                    <td><code>image</code></td>
+                    <td>Select an specific image, if not present, a random image will be returned</td>
+                    <td><a href="/hold?resize=400x400&image=calaveras.jpg">?image=calaveras.jpg</a></td>
+                </tr>
+            </table>
+            <a href="/list" class="btn btn-default btn-ghost">List image folder</a>
+            <a href="/cache/clear" class="btn btn-error btn-ghost" id="clear-cache">
+                Clear cache
+            </a>
+        </div>
+    </body>
+</html>

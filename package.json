@@ -1,0 +1,40 @@
+{
+  "name": "corporate-punk",
+  "version": "1.0.2",
+  "description": "Self-hosted image placeholder server",
+  "main": "index.js",
+  "bin": {
+    "punk": "./bin/punk"
+  },
+  "scripts": {
+    "start": "./bin/punk",
+    "dev": "DEBUG=punk* nodemon ./bin/punk",
+    "build": "purifycss node_modules/hack/dist/hack.css node_modules/hack/dist/dark.css ui/index.html --min --out ui/static/punk.min.css"
+  },
+  "author": "Ricardo Casares <ricardocasares@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "del": "^2.2.2",
+    "express": "^4.14.0",
+    "imagemagick-stream": "^4.1.1",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "hack": "^0.7.5"
+  },
+  "keywords": [
+    "image",
+    "placeholder",
+    "service",
+    "imagemagick",
+    "magick",
+    "resize",
+    "crop",
+    "server"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardocasares/corporate-punk.git"
+  }
+}
