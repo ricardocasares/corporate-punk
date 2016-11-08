@@ -4,7 +4,7 @@ const log = require('debug')('punk')
 const app = exp()
 
 app
-    .use('/', exp.static('ui'))
+    .use('/', exp.static(__dirname + '/ui'))
     .get('/hold',
         mw.randomImage,
         mw.specificImage,
