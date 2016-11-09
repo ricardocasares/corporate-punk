@@ -18,7 +18,8 @@
     "del": "^2.2.2",
     "express": "^4.14.0",
     "imagemagick-stream": "^4.1.1",
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.0",
+    "serve-index": "^1.8.0"
   },
   "devDependencies": {
     "hack": "^0.7.5"
