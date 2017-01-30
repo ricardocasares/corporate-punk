@@ -1,6 +1,8 @@
 # corporate punk
 ## Self-hosted image placeholder server
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ricardocasares/corporate-punk.svg)](https://greenkeeper.io/)
+
 Sometimes you need a placeholder server with your own stock or corporate images.
 Punk allows you to throw a bunch of images inside a folder and run the server
 
